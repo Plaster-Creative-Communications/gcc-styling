@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
 @font-face {
   font-family: "TWK Everett";
   src: url("../fonts/everett/twkeverett-medium-webfont.woff2") format("woff2"), url("../fonts/everett/twkeverett-medium-webfont.woff") format("woff");
@@ -568,12 +569,14 @@ textarea {
   display: flex;
   flex-direction: column;
   margin-top: 25px;
+  background-color: #F3F3F3;
+  padding-inline: 15px;
 }
 .intel-events a {
   color: #575757;
 }
 .intel-events__event, .intel-events__header {
-  padding: 15px;
+  padding: 20px;
   display: flex;
   background-color: #F3F3F3;
 }
