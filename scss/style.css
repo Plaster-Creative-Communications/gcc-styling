@@ -408,51 +408,6 @@ textarea {
   color: #0068B5;
 }
 
-.mav-hero {
-  width: 100%;
-  position: relative;
-}
-.mav-hero__img {
-  width: 100%;
-}
-.mav-hero__img img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.mav-hero__content {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.mav-hero__col {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 50px;
-}
-.mav-hero__col .mav-button {
-  margin-top: 15px;
-}
-.mav-hero__logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 13px;
-  margin: 0 auto;
-  width: 60%;
-}
-.mav-hero__logo img {
-  width: 80%;
-  border: 30px #ffffff solid;
-  border-radius: 13px;
-  box-shadow: 0 4px 13px rgba(0, 0, 0, 0.18);
-}
-
 .mav-button {
   font-size: 2rem;
   font-weight: 500;
