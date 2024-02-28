@@ -1,0 +1,55 @@
+.intel-events {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    a {
+        color: $grey;
+    }
+    &__event, &__header {
+        padding: 15px;
+        display: flex;
+        background-color: $greyLight;
+        
+    }
+    &__header {
+        border-bottom: 1px #C0C0C0 solid;
+        p {
+            color: $blue;
+        }
+    }
+    &__event {
+        transition: 0.2s;
+        padding-block: 25px;
+        border-bottom: 1px $greyLighter solid;
+        &:last-of-type {
+            border:none;
+        }
+    }
+    &__con {
+        width: 280px;
+        display: flex;
+        align-items: center;
+        svg {
+            margin-right:8px;
+            width: 25px;
+            path {
+                fill: $blue;
+                stroke:  $blue;
+        
+            }
+        }
+    }
+    &__icon {
+        width: 30px;
+        margin-right:8px;
+    }
+    &__p {
+        font-size: 1.9rem;
+        font-weight: 300;
+        // color: $blue;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
