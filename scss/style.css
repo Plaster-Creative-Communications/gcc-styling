@@ -163,6 +163,7 @@ textarea {
   width: 100%;
   background-color: #F3F3F3;
   padding: 25px;
+  height: calc(100% - 320px);
 }
 .intel-2-col__content ul, .intel-2-col__content .intel-body-p {
   margin-top: 10px;
@@ -307,6 +308,7 @@ textarea {
   width: 100%;
   background-color: #F3F3F3;
   padding: 25px;
+  height: calc(100% - 320px);
 }
 .intel-2-col__content ul, .intel-2-col__content .intel-body-p {
   margin-top: 10px;
