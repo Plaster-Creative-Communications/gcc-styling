@@ -410,28 +410,21 @@ textarea {
   color: #0068B5;
 }
 
-.mav-button {
+.intel-button {
   font-size: 2rem;
-  font-weight: 500;
-  color: #0068B5;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #0068B5;
   width: -moz-fit-content;
   width: fit-content;
   padding: 15px 38px;
-  border-radius: 25px;
+  border-radius: 0px;
   border: none;
   outline: none;
-  background-color: rgba(255, 255, 255, 0.8);
   transition: 0.2s ease;
   cursor: pointer;
   display: flex;
-}
-.mav-button:hover {
-  background-color: rgb(255, 255, 255);
-  color: #0068B5;
-}
-.mav-button__border {
-  border: 1px #0068B5 solid;
-  background-color: rgb(255, 255, 255);
+  margin-top: 25px;
 }
 
 .intel-carousel {
@@ -469,12 +462,13 @@ textarea {
 }
 .intel-carousel__pagination {
   position: absolute;
-  bottom: 25px;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   z-index: 99;
   display: flex;
   align-items: center;
+  padding: 25px;
 }
 .intel-carousel__pagination-pip {
   display: flex;
