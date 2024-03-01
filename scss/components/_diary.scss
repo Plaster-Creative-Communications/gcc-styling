@@ -3,11 +3,13 @@
     display: flex;
     flex-direction: column;
     margin-top: 25px;
+    background-color: $greyLight;
+    padding-inline: 15px;
     a {
         color: $grey;
     }
     &__event, &__header {
-        padding: 15px;
+        padding: 20px;
         display: flex;
         background-color: $greyLight;
         
