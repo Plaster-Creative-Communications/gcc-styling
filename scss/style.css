@@ -55,7 +55,7 @@ ul {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
   color: #0068B5;
 }
 
@@ -85,35 +85,35 @@ textarea {
 }
 
 .intel-heading__h1 {
-  font-size: 4rem;
-  font-weight: 600;
+  font-size: 4rem !important;
+  font-weight: 600 !important;
 }
 .intel-heading__h2 {
-  font-size: 3.8rem;
-  font-weight: 500;
-  color: #0068B5;
+  font-size: 3.8rem !important;
+  font-weight: 500 !important;
+  color: #0068B5 !important;
 }
 .intel-heading__h3 {
-  font-size: 2.4rem;
-  font-weight: 300;
-  color: #0068B5;
+  font-size: 2.4rem !important;
+  font-weight: 300 !important;
+  color: #0068B5 !important;
 }
 
 .intel-body-p {
-  font-family: "Arial";
-  font-size: 1.8rem;
-  font-weight: 300;
-  padding-block: 5px;
-  line-height: 1.7;
-  max-width: 900px;
+  font-family: "Arial" !important;
+  font-size: 1.8rem !important;
+  font-weight: 300 !important;
+  padding-block: 5px !important;
+  line-height: 1.7 !important;
+  max-width: 900px !important;
 }
 
 .intel-white {
-  color: white;
+  color: white !important;
 }
 
 .intel-blue {
-  color: #0068B5;
+  color: #0068B5 !important;
 }
 
 .intel-spacer {
@@ -411,20 +411,20 @@ textarea {
 }
 
 .intel-button {
-  font-size: 2rem;
-  font-weight: 400;
-  color: #ffffff;
-  background-color: #0068B5;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 15px 38px;
-  border-radius: 0px;
-  border: none;
-  outline: none;
-  transition: 0.2s ease;
-  cursor: pointer;
-  display: flex;
-  margin-top: 25px;
+  font-size: 2rem !important;
+  font-weight: 400 !important;
+  color: #ffffff !important;
+  background-color: #0068B5 !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  padding: 15px 38px !important;
+  border-radius: 0px !important;
+  border: none !important;
+  outline: none !important;
+  transition: 0.2s ease !important;
+  cursor: pointer !important;
+  display: flex !important;
+  margin-top: 25px !important;
 }
 
 .intel-carousel {
