@@ -435,8 +435,8 @@ textarea {
   height: 650px;
 }
 .intel-carousel__list {
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
   transition: transform 0.3s;
   transform: translateX(0px);
   list-style: none;
@@ -480,6 +480,10 @@ textarea {
   transition: 0.2s ease;
   margin-inline: 5px;
   cursor: pointer;
+  display: none;
+}
+.intel-carousel__pagination-pip:first-of-type, .intel-carousel__pagination-pip:nth-of-type(2), .intel-carousel__pagination-pip:nth-of-type(3), .intel-carousel__pagination-pip:nth-of-type(4) {
+  display: flex;
 }
 .intel-carousel__pagination-pip:active {
   opacity: 1;

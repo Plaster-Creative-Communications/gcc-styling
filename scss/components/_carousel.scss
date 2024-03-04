@@ -6,8 +6,8 @@
     height: 650px;
 
     &__list {
-        margin: 0;
-        padding: 0;
+        margin: 0!important;
+        padding: 0!important;
         transition: transform 0.3s;
         transform: translateX(0px);
         list-style: none;
@@ -48,6 +48,10 @@
             transition: 0.2s ease;
             margin-inline:5px;
             cursor: pointer;
+            display: none;
+            &:first-of-type, &:nth-of-type(2), &:nth-of-type(3),  &:nth-of-type(4){
+                display: flex;
+            }
             &:active {
                 opacity:1;
             }
