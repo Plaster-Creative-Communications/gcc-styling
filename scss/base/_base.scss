@@ -101,5 +101,12 @@ textarea {
 height: 25px;
 }
 
+.intel-border-blue {
+    border: 5px #00A3F6 solid;
+}
+// .intel-border-blue {
+//     border: 5px $blue solid;
+// }
+
 // This is a Normalize that makes browsers render all elements more consistently
 // and in line with modern standards.

@@ -120,6 +120,10 @@ textarea {
   height: 25px;
 }
 
+.intel-border-blue {
+  border: 5px #00A3F6 solid;
+}
+
 .intel-section {
   padding-inline: 25px;
   padding-block: 25px;
@@ -171,6 +175,13 @@ textarea {
   padding: 25px;
   height: 100%;
 }
+.intel-2-col__content.intel-flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.intel-2-col__content.intel-flex-col .intel-button {
+  margin-top: auto;
+}
 .intel-2-col__content ul, .intel-2-col__content .intel-body-p {
   margin-top: 10px;
 }
@@ -189,13 +200,16 @@ textarea {
 .intel-2-col__image {
   width: 100%;
 }
-.intel-2-col__image.intel-2-col__image-right-size img {
-  max-height: unset;
-  max-width: 100%;
-  height: -moz-fit-content;
-  height: fit-content;
-  -o-object-fit: contain;
-     object-fit: contain;
+.intel-2-col__image_doc {
+  padding: 50px;
+}
+.intel-2-col__image_doc img {
+  max-height: unset !important;
+  max-width: 100% !important;
+  height: -moz-fit-content !important;
+  height: fit-content !important;
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
 }
 .intel-2-col__image.intel-2-col__image-large img {
   max-height: 450px;
@@ -336,6 +350,13 @@ textarea {
   padding: 25px;
   height: 100%;
 }
+.intel-2-col__content.intel-flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.intel-2-col__content.intel-flex-col .intel-button {
+  margin-top: auto;
+}
 .intel-2-col__content ul, .intel-2-col__content .intel-body-p {
   margin-top: 10px;
 }
@@ -354,13 +375,16 @@ textarea {
 .intel-2-col__image {
   width: 100%;
 }
-.intel-2-col__image.intel-2-col__image-right-size img {
-  max-height: unset;
-  max-width: 100%;
-  height: -moz-fit-content;
-  height: fit-content;
-  -o-object-fit: contain;
-     object-fit: contain;
+.intel-2-col__image_doc {
+  padding: 50px;
+}
+.intel-2-col__image_doc img {
+  max-height: unset !important;
+  max-width: 100% !important;
+  height: -moz-fit-content !important;
+  height: fit-content !important;
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
 }
 .intel-2-col__image.intel-2-col__image-large img {
   max-height: 450px;

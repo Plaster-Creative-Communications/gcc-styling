@@ -49,6 +49,13 @@
         background-color: $greyLight;
         padding: 25px;
         height: 100%;
+        &.intel-flex-col {
+            display: flex;
+            flex-direction: column;
+            .intel-button {
+                margin-top: auto;
+            }
+        }
         ul, .intel-body-p {
             margin-top: 10px;
         }
@@ -67,15 +74,13 @@
     }
     &__image {
         width: 100%;
-        // display: flex;
-        // align-items: center;
-        // justify-content: center;
-        &.intel-2-col__image-right-size {
+        &_doc {
+            padding: 50px;
             img {
-                max-height: unset;
-                max-width: 100%;
-                height: fit-content;
-                object-fit: contain;
+                max-height: unset!important;
+                max-width: 100%!important;
+                height: fit-content!important;
+                object-fit: contain!important;
             }
         }
         &.intel-2-col__image-large {
