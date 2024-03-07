@@ -67,16 +67,19 @@ textarea {
     &__h1 {
         font-size: 4rem!important;
         font-weight: 600!important;
+        margin:0!important;
     }
     &__h2 {
         font-size: 3.8rem!important;
         font-weight: 500!important;
         color: $blue!important;
+        margin:0!important;
     }
     &__h3 {
         font-size: 2.4rem!important;
         font-weight: 300!important;
         color: $blue!important;
+        margin:0!important;
     }
 }
 
