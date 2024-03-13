@@ -20,4 +20,7 @@
     //     border: 1px $blue solid;
     //     background-color: rgba(255,255,255);
     // }
+    &.center {
+        margin-inline: auto;
+    }
 }
