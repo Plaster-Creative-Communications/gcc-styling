@@ -10,7 +10,7 @@
 /* Hero image */
 .max-width-container {
     padding: 0 !important;
-    margin: 0 !important;
+    margin: 0 auto!important;
     width: 1280px !important;
     min-width: 1280px !important;
     max-width: 1280px !important;
