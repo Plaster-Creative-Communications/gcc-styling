@@ -36,6 +36,9 @@ ul {
 a {
     text-decoration: none!important;
     color: $blue;
+    &:hover {
+        text-decoration: underline!important;
+    }
 }
 
 img {
@@ -71,7 +74,7 @@ textarea {
     }
     &__h2 {
         font-size: 3.8rem!important;
-        font-weight: 500!important;
+        font-weight: 400!important;
         color: $blue!important;
         margin:0!important;
     }
@@ -80,6 +83,18 @@ textarea {
         font-weight: 300!important;
         color: $blue!important;
         margin:0!important;
+        line-height: 1.4;
+        &.intel-margin {
+            margin-top: 10px!important;
+            margin-bottom: 15px!important;
+        }
+    }
+    &__h4 {
+        font-size: 1.8rem!important;
+        font-weight: 300!important;
+        color: $blue!important;
+        margin:0!important;
+        line-height: 1.4;
     }
 }
 
@@ -90,7 +105,10 @@ textarea {
     padding-block:5px!important;
     line-height: 1.7!important;
     max-width: 900px!important;
-    
+    &__small {
+        font-size: 1.4rem!important;
+        line-height: 1.6;
+    }
 }
 
 .intel-white {
@@ -99,7 +117,13 @@ textarea {
 .intel-blue {
     color: $blue!important;
 }
+.intel-black {
+    color: black!important;
+}
 
+.intel-bg-light-grey {
+    background-color: $greyLight!important;
+}
 .intel-spacer {
 height: 25px;
 }

@@ -4,6 +4,9 @@
     padding-block: 25px;
     display: flex;
     flex-direction: column;
+    &.intel-2-col {
+        margin: 0;
+    }
 }
 .intel-intro {
     display: flex;
@@ -28,6 +31,20 @@
     width: 80%;
     margin-inline: auto;
     margin-top:25px;
+    &.intel-video-iframe {
+        position: relative;
+        width: 80%;
+        height: 575px;
+        margin-top:0px;
+        // padding-top: 46.25%;
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
 }
 
 .intel-2-col {
@@ -41,6 +58,9 @@
         justify-content: stretch;
         &:first-of-type {
             margin-right: 30px;
+        }
+        &.center {
+            justify-content: center;
         }
     }
 
@@ -176,3 +196,24 @@
     }
 }
 
+.intel-logo{
+    &__propel {
+        width: 100px;
+        margin-bottom:20px;
+    }
+}
+
+.intel-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+}
+
+.intel-card {
+    &__white {
+        background-color: $white;
+    }
+    &__content {
+        padding: 15px;
+    }
+}
