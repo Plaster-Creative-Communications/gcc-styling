@@ -270,6 +270,9 @@
 .gcc-region__select a:hover { 
     border-color:white;
 }
+.gcc-region__select a.active { 
+    border-color:white;
+}
 .gcc-region__select a img { 
     width: 100%;
 
