@@ -1,0 +1,12 @@
+.gcc-section {
+    padding-inline: 50px;
+    padding-block: 50px;
+    display: flex;
+    flex-direction: column;
+    &__no-pad-top {
+        padding-top: 0;
+    }
+    &__no-pad-bottom {
+        padding-bottom: 0;
+    }
+}

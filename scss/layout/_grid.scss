@@ -1,0 +1,16 @@
+.gcc-grid {
+    display: grid;
+    gap: 25px;
+    &__2-cols {
+        grid-template-columns: repeat(2,1fr);
+    }
+    &__3-cols {
+        grid-template-columns: repeat(3,1fr);
+    }
+    &__4-cols {
+        grid-template-columns: repeat(4,1fr);
+    }
+    .gcc-col {
+        width: 100%;
+    }
+}

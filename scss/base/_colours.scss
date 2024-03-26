@@ -1,0 +1,42 @@
+// INtel
+.intel-white {
+    color: white!important;
+}
+.intel-blue {
+    color: $blue!important;
+}
+.intel-black {
+    color: black!important;
+}
+
+.intel-bg-light-grey {
+    background-color: $greyLight!important;
+}
+
+// GCC
+
+.gcc-grey {
+    color: $grey;
+}
+
+.gcc-bg {
+    &__white {
+        background-color: $white!important;
+    }
+    &__light-grey {
+        background-color: $greyLight!important;
+    }
+}
+
+// Seagate 
+
+.seagate-green {
+    color: $seagate-green!important
+}
+
+.seagate-bg-green {
+    background: $seagate-green!important;
+    background-color: $seagate-green!important;
+    color: $black!important;
+}
+
