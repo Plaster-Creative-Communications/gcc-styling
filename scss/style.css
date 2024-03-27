@@ -1245,4 +1245,12 @@ textarea {
   padding: 25px;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.04);
   border-radius: 1px;
+  display: flex;
+  flex-direction: column;
+}
+.gcc-card .gcc-body-p {
+  margin-bottom: 25px !important;
+}
+.gcc-card .gcc-button {
+  margin-top: auto !important;
 }/*# sourceMappingURL=style.css.map */
