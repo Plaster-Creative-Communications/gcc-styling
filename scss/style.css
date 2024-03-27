@@ -1045,6 +1045,9 @@ textarea {
 .gcc-button.seagate-bg-green:hover svg {
   transform: translateX(5px);
 }
+.gcc-button p {
+  margin: 0 !important;
+}
 
 .intel-carousel {
   overflow: hidden;
