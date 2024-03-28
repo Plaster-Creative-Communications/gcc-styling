@@ -76,7 +76,7 @@
     font-size: 22px;
     font-weight: 500;
     text-transform: none;
-    padding: 11px 50px;
+    padding: 11px 40px;
     color: #ffffff;
     border: 2px solid  var(--light-blue);
     background-color:  var(--light-blue)!important;
@@ -251,9 +251,13 @@
     max-height: 0;
     overflow: hidden;
     transition: 0.2s ease max-height;
+    &__p {
+        font-size: 19px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
     &.show {
         max-height: 1000px;
-        margin-top: 50px;
+        margin-top: 25px;
     }
 }
 .server-toggle-button {
@@ -281,8 +285,11 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
-    margin-inline: auto;;
+    width: 100%;
+    margin-inline: auto;
+    .server-toggle-button {
+        // margin-right:3px;
+    }
 }
 
 
