@@ -66,13 +66,13 @@
   border: 2px solid transparent;
   margin-top: 20px !important;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 22px !important;
   font-weight: 500;
   padding: 15px 50px;
 }
 
 .server-configure-btn {
-  font-size: 22px;
+  font-size: 20px !important;
   font-weight: 500;
   text-transform: none;
   padding: 11px 40px;
@@ -258,10 +258,10 @@
   background: none;
   border: none;
   outline: none;
-  font-size: 20px;
+  font-size: 20px !important;
   text-decoration: underline;
   color: var(--light-blue);
-  margin-top: 0px;
+  margin-top: 0px !important;
   cursor: pointer;
 }
 .server-toggle-button:hover {
@@ -282,6 +282,7 @@
   align-items: center;
   width: 100%;
   margin-inline: auto;
+  margin-top: 15px !important;
 }
 /* Footer styles */
 .footer {
