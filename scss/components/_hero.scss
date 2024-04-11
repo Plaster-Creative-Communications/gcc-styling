@@ -1,0 +1,33 @@
+
+.td-hero {
+    width: 100%;
+    position: relative;
+    &__image {
+        width: 100%;
+ 
+        position: relative;
+    }
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,87,88,0.6);
+        display: flex;
+        padding: 50px 25px;
+    }
+    &__content {
+        margin-top: auto;
+        max-width: 750px;
+        .td-heading__h1  {
+            margin-bottom: 15px!important;
+        }
+    }
+    &__logo {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        width: 150px;
+    }
+}

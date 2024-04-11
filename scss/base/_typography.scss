@@ -36,6 +36,67 @@
 
     }
 
+
+// TD SYNNEx
+
+.td-heading {
+    &__h1 {
+        font-size: 4rem!important;
+        font-weight: 600!important;
+        margin:0!important;
+        line-height: 1.3;
+    }
+    &__h2 {
+        font-size: 3.4rem!important;
+        font-weight: 600!important;
+        color: $teal!important;
+        margin:0!important;
+        line-height: 1.2;
+    }
+    &__h3 {
+        font-size: 2.4rem!important;
+        font-weight: 300!important;
+        color: $teal!important;
+        margin:0!important;
+        line-height: 1.4;
+        &.intel-margin {
+            margin-top: 10px!important;
+            margin-bottom: 15px!important;
+        }
+    }
+    &__h4 {
+        font-size: 1.8rem!important;
+        font-weight: 300!important;
+        color: $teal!important;
+        margin:0!important;
+        line-height: 1.4;
+    }
+}
+.center {
+    text-align: center;
+    margin-inline:auto;
+}
+.td-content-p {
+    font-family: "Arial"!important;
+    font-size: 1.8rem!important;
+    font-weight: 300!important;
+    padding-block:5px!important;
+    line-height: 1.7!important;
+    max-width: 900px!important;
+    &__small {
+        font-size: 1.4rem!important;
+        line-height: 1.6;
+    }
+}
+
+.td-subheading {
+        font-size: 1.8rem!important;
+        font-weight: 300!important;
+        font-family: 'Arial';
+        line-height: 1.3;
+        margin:0!important;
+    }
+
     .gcc-heading {
    
         &__h1 {

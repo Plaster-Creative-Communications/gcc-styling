@@ -23,6 +23,64 @@
   font-weight: 400;
   font-style: normal;
 }
+.td-heading__h1 {
+  font-size: 4rem !important;
+  font-weight: 600 !important;
+  margin: 0 !important;
+  line-height: 1.3;
+}
+.td-heading__h2 {
+  font-size: 3.4rem !important;
+  font-weight: 600 !important;
+  color: #005758 !important;
+  margin: 0 !important;
+  line-height: 1.2;
+}
+.td-heading__h3 {
+  font-size: 2.4rem !important;
+  font-weight: 300 !important;
+  color: #005758 !important;
+  margin: 0 !important;
+  line-height: 1.4;
+}
+.td-heading__h3.intel-margin {
+  margin-top: 10px !important;
+  margin-bottom: 15px !important;
+}
+.td-heading__h4 {
+  font-size: 1.8rem !important;
+  font-weight: 300 !important;
+  color: #005758 !important;
+  margin: 0 !important;
+  line-height: 1.4;
+}
+
+.center {
+  text-align: center;
+  margin-inline: auto;
+}
+
+.td-content-p {
+  font-family: "Arial" !important;
+  font-size: 1.8rem !important;
+  font-weight: 300 !important;
+  padding-block: 5px !important;
+  line-height: 1.7 !important;
+  max-width: 900px !important;
+}
+.td-content-p__small {
+  font-size: 1.4rem !important;
+  line-height: 1.6;
+}
+
+.td-subheading {
+  font-size: 1.8rem !important;
+  font-weight: 300 !important;
+  font-family: "Arial";
+  line-height: 1.3;
+  margin: 0 !important;
+}
+
 .gcc-heading__h1 {
   font-size: 4rem !important;
   font-weight: 600 !important;
@@ -217,6 +275,10 @@ textarea {
 }
 .gcc-margin__inline {
   margin-inline: 25px !important;
+}
+
+.white {
+  color: white !important;
 }
 
 .intel-white {
@@ -990,6 +1052,43 @@ textarea {
   width: 100%;
 }
 
+.td-button {
+  font-size: 1.6rem !important;
+  font-weight: 700 !important;
+  color: #003031 !important;
+  background-color: #CCD814 !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  padding: 18px 38px !important;
+  padding-top: 21px !important;
+  border-radius: 0px !important;
+  border: none !important;
+  outline: none !important;
+  transition: 0.2s ease !important;
+  cursor: pointer !important;
+  display: flex !important;
+  margin-top: 25px !important;
+  text-transform: uppercase;
+}
+.td-button:hover {
+  text-decoration: none !important;
+}
+.td-button.center {
+  margin-inline: auto;
+}
+.td-button__link {
+  font-size: 1.6rem !important;
+  font-weight: 700 !important;
+  color: #003031 !important;
+  text-decoration: underline !important;
+  text-transform: uppercase;
+  display: block;
+}
+.td-button__link.center {
+  margin-inline: auto;
+  text-align: center;
+}
+
 .intel-button {
   font-size: 2rem !important;
   font-weight: 400 !important;
@@ -1253,4 +1352,129 @@ textarea {
 }
 .gcc-card .gcc-button {
   margin-top: auto !important;
+}
+
+.td-hero {
+  width: 100%;
+  position: relative;
+}
+.td-hero__image {
+  width: 100%;
+  position: relative;
+}
+.td-hero__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 87, 88, 0.6);
+  display: flex;
+  padding: 50px 25px;
+}
+.td-hero__content {
+  margin-top: auto;
+  max-width: 750px;
+}
+.td-hero__content .td-heading__h1 {
+  margin-bottom: 15px !important;
+}
+.td-hero__logo {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 150px;
+}
+
+.td-section {
+  margin-block: 50px;
+  padding-inline: 25px;
+}
+
+.td-2-cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+.td-2-cols .td-col {
+  width: 100%;
+}
+
+.td-footer {
+  width: 100%;
+  background-color: #005758;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.td-tables {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 900px;
+  margin-inline: auto;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+.td-tables .td-table {
+  border: 1px #003031 solid;
+}
+.td-tables .td-table__header {
+  background-color: #003031;
+  color: #ffffff;
+  padding: 25px 15px;
+  text-align: center;
+}
+.td-tables .td-table__title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #ffffff;
+  font-family: "TWK Everett";
+  text-transform: uppercase;
+}
+.td-tables .td-table__list {
+  text-align: center;
+  padding: 15px;
+  color: #003031;
+  font-weight: 500;
+}
+
+.td-tiers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+.td-tiers__tier {
+  background-color: #D9D8D7;
+  padding: 20px;
+}
+.td-tiers__tier:nth-of-type(1) {
+  margin-top: 150px;
+}
+.td-tiers__tier:nth-of-type(2) {
+  margin-top: 100px;
+}
+.td-tiers__tier:nth-of-type(3) {
+  margin-top: 50px;
+}
+.td-tiers__tier .td-heading__h4 {
+  font-size: 2.2rem !important;
+  font-weight: 600 !important;
+  font-family: "TWK Everett" !important;
+  text-transform: uppercase !important;
+}
+.td-tiers__tier .td-content-p {
+  font-size: 1.6rem !important;
+}
+.td-tiers__tier.highlight {
+  background-color: #08BED5;
+}
+.td-tiers__tier.highlight .td-heading__h4, .td-tiers__tier.highlight .td-content-p {
+  color: #ffffff !important;
+}
+
+.td-tier-line {
+  margin-bottom: -125px;
 }/*# sourceMappingURL=style.css.map */

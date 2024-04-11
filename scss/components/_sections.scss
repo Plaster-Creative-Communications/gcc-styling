@@ -1,0 +1,21 @@
+.td-section {
+    margin-block: 50px;
+    padding-inline: 25px;
+}
+
+.td-2-cols {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+    .td-col {
+        width: 100%;
+    }
+}
+.td-footer {
+    width: 100%;
+    background-color: $teal;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

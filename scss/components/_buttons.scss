@@ -1,3 +1,43 @@
+.td-button {
+    font-size: 1.6rem!important;
+    font-weight: 700!important;
+    color: $deepTeal!important;
+    background-color: $chartreuse!important;
+    width: fit-content!important;
+    padding: 18px 38px!important;
+    padding-top: 21px!important;
+    border-radius: 0px!important;
+    border: none!important;
+    outline:none!important;
+    transition: 0.2s ease!important;
+    cursor: pointer!important;
+    display: flex!important;
+    margin-top: 25px!important;
+    text-transform: uppercase;
+    
+    &:hover {
+        text-decoration: none!important;
+    }
+    // &__border {
+    //     border: 1px $blue solid;
+    //     background-color: rgba(255,255,255);
+    // }
+    &.center {
+        margin-inline: auto;
+    }
+    &__link {
+        font-size: 1.6rem!important;
+        font-weight: 700!important;
+        color: $deepTeal!important;
+        text-decoration: underline!important;
+        text-transform: uppercase;
+        display: block;
+        &.center {
+            margin-inline: auto;
+            text-align: center;
+        }
+    }
+}
 .intel-button {
     font-size: 2rem!important;
     font-weight: 400!important;
