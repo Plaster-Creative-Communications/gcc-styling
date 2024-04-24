@@ -151,7 +151,7 @@ height: 25px;
     &.gradient {
         top:0px;
         background: rgb(0,0,0);
-        background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 70%, rgba(15,75,172,0.4) 100%);
+        background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 40%, rgba(15,75,172,1) 100%);
     }
 }
 
