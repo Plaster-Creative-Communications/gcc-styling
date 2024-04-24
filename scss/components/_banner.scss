@@ -27,3 +27,29 @@
         }
     }
 }
+
+.sparkle-cta-banner {
+    width: 80%;
+    background-color: $sparkle-blue;
+    margin-inline: auto;
+    padding: 50px;
+    margin-block: 50px;
+    position: relative;
+    z-index: 1;
+    .gcc-button-wrapper {
+        width: fit-content;
+        margin-inline: auto;
+    }
+    a {
+        background-color: $white;
+        color: $sparkle-blue;
+        font-family: 'Arial';
+        font-size: 1.6rem;
+        font-weight: 300;
+        padding: 15px;
+        margin-inline: 15px;
+        &:hover {
+            text-decoration: none!important;
+        }
+    }
+}
