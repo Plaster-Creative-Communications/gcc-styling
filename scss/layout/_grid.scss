@@ -81,3 +81,51 @@
 }
 
 }
+
+.sparkle-grid-bg  {
+    position: fixed;
+    top:0;
+    left:50%;
+    width: 1280px;
+    height: 100vh;
+    z-index: 0;
+    transform: translateX(-50%);
+    padding-inline: 50px;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    &__line-wrap {
+        width: 400px;
+        height: 100vh;
+        position: relative;
+    }
+    &__line {
+        height: 100%;
+        width: 1px;
+        background-color: rgba(135, 135, 135, 0.4);
+        // opacity: 0.2;
+    }
+    &__dash {
+        width: 1px;
+        height: 57px;
+        background: linear-gradient(180deg, #00AFFF 0%, rgba(0, 175, 255, 0) 105.43%);
+        position: absolute;
+        animation-name: bgLine;
+        animation-iteration-count: infinite;
+        z-index: 1;
+        animation-duration: 9.62857s;
+        // opacity: 1;
+    }
+
+    @keyframes bgLine {
+        0% {
+            top: -57px;
+        }
+        100% {
+            top: 100%;
+        }
+    }
+}

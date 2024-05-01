@@ -302,46 +302,6 @@ textarea {
   background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 40%, rgb(15, 75, 172) 100%);
 }
 
-.sparkle-grid-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: 0;
-}
-.sparkle-grid-bg__container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-.sparkle-grid-bg__line-wrap {
-  height: 100vh;
-  position: relative;
-}
-.sparkle-grid-bg__line {
-  height: 100%;
-  width: 1px;
-  background-color: rgba(135, 135, 135, 0.4);
-}
-.sparkle-grid-bg__dash {
-  width: 1px;
-  height: 57px;
-  background: linear-gradient(180deg, #00AFFF 0%, rgba(0, 175, 255, 0) 105.43%);
-  position: absolute;
-  animation-name: bgLine;
-  animation-iteration-count: infinite;
-  z-index: 1;
-  animation-duration: 9.62857s;
-}
-@keyframes bgLine {
-  0% {
-    top: -57px;
-  }
-  100% {
-    top: 100%;
-  }
-}
-
 .white {
   color: white !important;
 }
@@ -475,6 +435,51 @@ textarea {
 .sparkle-grid__2-cols .sparkle-col-img {
   width: 400px;
   margin: auto;
+}
+
+.sparkle-grid-bg {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 1280px;
+  height: 100vh;
+  z-index: 0;
+  transform: translateX(-50%);
+  padding-inline: 50px;
+}
+.sparkle-grid-bg__container {
+  display: flex;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.sparkle-grid-bg__line-wrap {
+  width: 400px;
+  height: 100vh;
+  position: relative;
+}
+.sparkle-grid-bg__line {
+  height: 100%;
+  width: 1px;
+  background-color: rgba(135, 135, 135, 0.4);
+}
+.sparkle-grid-bg__dash {
+  width: 1px;
+  height: 57px;
+  background: linear-gradient(180deg, #00AFFF 0%, rgba(0, 175, 255, 0) 105.43%);
+  position: absolute;
+  animation-name: bgLine;
+  animation-iteration-count: infinite;
+  z-index: 1;
+  animation-duration: 9.62857s;
+}
+@keyframes bgLine {
+  0% {
+    top: -57px;
+  }
+  100% {
+    top: 100%;
+  }
 }
 
 .intel-section {
