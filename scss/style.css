@@ -302,6 +302,32 @@ textarea {
   background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 40%, rgb(15, 75, 172) 100%);
 }
 
+.seagate-line {
+  background-color: #6EBE49;
+  height: 2px;
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.td-bold {
+  font-weight: 600 !important;
+}
+
+.td-spacer {
+  height: 20px;
+}
+
+.td-image-and-content {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin-inline: auto;
+  border-bottom: 1px white solid;
+  margin-bottom: 25px;
+}
+.td-image-and-content .td-image {
+  margin-right: 25px;
+}
 .white {
   color: white !important;
 }
@@ -320,6 +346,10 @@ textarea {
 
 .intel-bg-light-grey {
   background-color: #F3F3F3 !important;
+}
+
+.td-teal {
+  color: #005758;
 }
 
 .gcc-grey {
@@ -480,6 +510,29 @@ textarea {
   100% {
     top: 100%;
   }
+}
+
+.td-col__2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.td-col__2.margin-top {
+  margin-top: 20px;
+}
+.td-col__2.center {
+  margin-inline: auto;
+  gap: 50px;
+}
+
+.td-col {
+  display: flex;
+  flex-direction: column;
+}
+.td-col.center {
+  align-items: center;
+  justify-content: center;
 }
 
 .intel-section {
@@ -1489,6 +1542,12 @@ textarea {
   text-decoration: none !important;
 }
 
+.td-banner__teal {
+  background-color: #003031;
+  padding-block: 60px;
+  color: #ffffff;
+}
+
 .intel-events {
   width: 100%;
   display: flex;
@@ -1594,6 +1653,32 @@ textarea {
   top: 25px;
   right: 25px;
   width: 150px;
+}
+
+.seagate-hero {
+  background-color: #000000;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  min-height: 400px;
+}
+.seagate-hero__content {
+  width: 50%;
+}
+.seagate-hero__content .gcc-subheading__small {
+  margin-bottom: 20px;
+}
+.seagate-hero__content .gcc-heading__h1 {
+  margin-bottom: 15px !important;
+}
+.seagate-hero__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.seagate-hero__image img {
+  width: 80%;
 }
 
 .td-section {
@@ -1815,4 +1900,32 @@ textarea {
 }
 .sparkle-product__more-info-btn.open svg {
   transform: rotate(180deg);
+}
+
+.seagate-configurator {
+  margin-top: 20px;
+  padding-top: 25px;
+  border-top: 1px #D9D9D9 solid;
+}
+.seagate-configurator .seagate-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px #D9D9D9 solid;
+}
+.seagate-configurator .seagate-input-wrapper label {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Arial" !important;
+  color: #000000;
+}
+.seagate-configurator .seagate-input-wrapper select {
+  font-size: 22px;
+  margin-top: 5px;
+  padding: 25px 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.seagate-configurator .seagate-input-wrapper select:invalid {
+  opacity: 0.6;
 }/*# sourceMappingURL=style.css.map */

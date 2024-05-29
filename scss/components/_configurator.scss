@@ -1,0 +1,28 @@
+
+.seagate-configurator {
+   margin-top: 20px;
+   padding-top:25px;
+   border-top: 1px $lightGrey solid;;
+   .seagate-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px $lightGrey solid;;
+    label {
+        font-size: 20px;
+        font-weight: 600;
+        font-family: "Arial"!important;
+        color: $black;
+    }
+    select {
+        font-size: 22px;
+        margin-top: 5px;
+        padding: 25px 0;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        &:invalid {
+            opacity: 0.6;
+          }
+    }
+   } 
+}

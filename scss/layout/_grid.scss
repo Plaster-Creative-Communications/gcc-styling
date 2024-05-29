@@ -129,3 +129,25 @@
         }
     }
 }
+
+.td-col__2 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: fit-content;
+    &.margin-top {
+        margin-top: 20px;
+    }
+    &.center {
+        margin-inline:auto;
+        gap: 50px;
+    }
+}
+
+.td-col {
+    display: flex;
+    flex-direction: column;
+    &.center {
+        align-items: center;
+        justify-content: center;
+    }
+}

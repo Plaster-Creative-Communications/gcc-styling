@@ -119,7 +119,7 @@ height: 25px;
 }
 .gcc-border {
     &__block {
-        border-block: 1px #D9D9D9 solid;
+        border-block: 1px $lightGrey solid;
         padding-block: 50px;
     }
 }
@@ -154,7 +154,37 @@ height: 25px;
         background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 40%, rgba(15,75,172,1) 100%);
     }
 }
+.seagate-line {
+    background-color: $seagate-green;
+    height: 2px;
+    width: 60px;
+    margin-bottom:10px;
+}
 
+.td-bold {
+    font-weight: 600!important;
+}
+
+.td-spacer {
+    height: 20px;
+}
+
+.td-image-and-content {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin-inline:auto;
+    border-bottom: 1px white solid;
+
+    margin-bottom:25px;
+    .td-image {
+        // width: 20%;
+        margin-right:25px;
+    }
+    .td-content {
+        // width: 70%;;
+    }
+}
 
 // This is a Normalize that makes browsers render all elements more consistently
 // and in line with modern standards.

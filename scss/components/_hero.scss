@@ -37,3 +37,30 @@
         width: 150px;
     }
 }
+
+.seagate-hero {
+    background-color: $black;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    min-height: 400px;
+    &__content {
+        width: 50%;
+        .gcc-subheading__small {
+            margin-bottom: 20px;
+        }
+        .gcc-heading__h1 {
+            margin-bottom:15px!important;
+        }
+    }
+
+    &__image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        img {
+            width: 80%;
+        }
+    }
+}

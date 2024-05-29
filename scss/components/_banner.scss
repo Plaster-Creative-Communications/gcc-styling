@@ -54,3 +54,11 @@
         }
     }
 }
+
+.td-banner {
+    &__teal {
+        background-color: $deepTeal;
+        padding-block: 60px;
+        color: $white;
+    }
+}
