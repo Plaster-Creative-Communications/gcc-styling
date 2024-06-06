@@ -1,19 +1,47 @@
 
 .seagate-configurator {
    margin-top: 20px;
-   padding-top:25px;
-   border-top: 1px $lightGrey solid;;
+   border-top: 1px $lightGrey solid;
+    .seagate-input-wrapper__2-col {
+        display: flex;
+        flex-direction: row;
+        .seagate-input-wrapper {
+            &:first-of-type {
+                width: 60%;
+                margin-right: 25px;
+            }
+            &:nth-of-type(2) {
+                width: 40%;
+            }
+           
+        }
+        &.split { 
+            .seagate-input-wrapper {
+                &:first-of-type {
+                    width: 50%;
+                    margin-right: 25px;
+                }
+                &:nth-of-type(2) {
+                    width: 50%;
+                } 
+            }
+        }
+    }
    .seagate-input-wrapper {
     display: flex;
     flex-direction: column;
-    border-bottom: 1px $lightGrey solid;;
+    border-bottom: 1px $lightGrey solid;
+    padding-top:25px;
+    &.hide {
+        display: none;
+    }
     label {
         font-size: 20px;
         font-weight: 600;
         font-family: "Arial"!important;
         color: $black;
     }
-    select {
+    select, input {
         font-size: 22px;
         margin-top: 5px;
         padding: 25px 0;
@@ -25,4 +53,35 @@
           }
     }
    } 
+   .seagate-configurator__actions {
+    padding: 15px 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    opacity: 1;
+    transition: 0.2s ease;
+    &.hidden {
+        opacity: 0;  
+        transition: 0.2s ease;
+    }
+    .gcc-button.seagate-bg-green {
+        width: fit-content!important;
+        p {
+            margin-right: 15px!important;
+        }
+        &:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transition: 0.2s ease;
+        }
+    }
+        // input[type=submit] {
+        //     padding: 20px 50px;
+        //     background: black;
+        //     color: $white;
+        //     font-family: $font;
+        //     cursor: pointer;
+        //     font-size: 1.8rem;
+        // }
+   }
 }
