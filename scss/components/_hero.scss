@@ -1,7 +1,10 @@
 
-.td-hero {
+.td-hero, .gcc-hero {
     width: 100%;
     position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     &__image {
         width: 100%;
  
@@ -36,9 +39,22 @@
         right: 25px;
         width: 150px;
     }
+    &.green-overlay { 
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $teal;
+            opacity: 0.5;
+            z-index: 0;
+        }
+    }
 }
 
-.seagate-hero {
+.seagate-hero, .gcc-hero {
     background-color: $black;
     padding: 50px;
     display: flex;
@@ -46,11 +62,15 @@
     min-height: 400px;
     &__content {
         width: 50%;
+        position: relative;
+        z-index: 2;
         .gcc-subheading__small {
             margin-bottom: 20px;
+            position: relative;
         }
         .gcc-heading__h1 {
             margin-bottom:15px!important;
+            position: relative;
         }
     }
 
@@ -62,5 +82,8 @@
         img {
             width: 80%;
         }
+    }
+    .gcc-logo {
+        width: 300px;
     }
 }

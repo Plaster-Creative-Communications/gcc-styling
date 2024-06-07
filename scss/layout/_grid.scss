@@ -19,6 +19,11 @@
     .gcc-col {
         width: 100%;
     }
+    .gcc-col-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .sparkle-grid__2-cols {

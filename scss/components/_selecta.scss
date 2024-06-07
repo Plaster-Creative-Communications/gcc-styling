@@ -1,0 +1,288 @@
+.gcc-server-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+    width: fit-content;
+    margin-inline: auto;
+    margin-top: 25px;
+    &.col-3 {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+.gcc-server-configuration {
+    padding-top: 0;
+}
+
+.gcc-server {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 410px;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+        text-decoration: unset!important;
+    }
+    &__image {
+        background: $greyLight;
+        border-radius: 30px;
+        padding: 60px 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+        width: 100%;
+        height: 200px;
+        // img {
+        //     width: 100%;
+        //     max-width: 150px;
+        // }
+    }
+    &__see-more {
+        background: none;
+        border: none;
+        outline: none;
+        font-family: 'Arial';
+        font-size: 1.8rem;
+        color: $grey;
+        // border-bottom: 1px $grey solid;
+        margin-top: 15px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        svg {
+            margin-left: 10px;
+            transition: 0.2s ease;
+        }
+        &.open {
+            svg {
+                transform: rotate(180deg)
+            }
+        }
+    }
+
+}
+
+.gcc-server-logo {
+    max-width: 200px;
+    margin-inline: auto;
+}
+
+
+.gcc-region {
+    &.new {
+        padding: 15px;
+        background-color: $teal;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        .gcc-region__title { 
+            text-align: center;
+            font-size: 14px;
+            font-weight: 300;
+            text-decoration: unset;
+            text-underline-offset: 4px;
+            color: white;
+            margin-right:2px;
+          }
+          .gcc-region__select { 
+             display: flex;
+             align-items: center;
+             justify-content: center;
+          }
+          .gcc-region__flag { 
+              width: 40px;
+              margin-left: 8px;
+              margin-right: 0;
+              border: 1px $white solid;
+              opacity: 0.5;
+              transition: 0.2s;
+              &.active {
+                 opacity: 1;
+              }
+              &:hover {
+                opacity: 1;
+              }
+              img {
+                width: 100%;
+              }
+          }
+    } 
+}
+
+.gcc-server-form-wrapper {
+    margin-top: 25px;
+    padding-top:25px;
+    width: 100%;
+    max-width: 700px;
+    margin-inline: auto;
+    // border-top: 1px $greyLighter solid;
+    .gcc-heading__h4 {
+        margin-bottom: 15px!important;
+    }
+    .gcc-submit {
+        margin-inline: auto;
+    }
+}
+.gcc-server-form {
+    .gcc-server-form__inner {
+        max-height: 50000px;
+        transition: 0.5s ease;
+        opacity: 1;
+    }
+    .gcc-button {
+        transition:  0.5s ease;
+        margin-top: 0!important;
+    }
+    &.hidden {
+        .gcc-server-form__inner {
+            max-height: 0px;
+            overflow: hidden;
+            transition:  0.5s ease;
+            opacity: 0;
+        }
+        .gcc-button {
+            margin-top: 0!important;
+            transition:  0.5s ease;
+        }
+    }
+    &__personal-info {
+        margin-top:30px;
+    }
+
+}
+
+.gcc-server-details {
+    margin-top:15px;
+    overflow: hidden;
+    max-height: 0;
+    margin: 0;
+    transition: 0.2s ease;
+    &.show {
+        margin-top:15px;
+        max-height: 50000px;
+        height: 100%;
+        transition: 0.2s ease;
+    }
+    .gcc-server-list {
+        margin-top:5px;
+    }
+}
+
+.gcc-hidden-fields {
+    display: none;
+    visibility: hidden;
+    margin: 0!important;
+    height: 0!important;
+}
+
+.gcc-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    width: 100%;
+    label {
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin-bottom: 5px;
+        color: $teal;
+        margin-bottom: 10px;
+        transition: 0.2s ease;
+    }
+    .required {
+        color: $chartreuse;
+    }
+    .gcc-select, .gcc-input {
+        background-color: $greyLight;
+        border: none;
+        outline: none;
+        padding: 15px 15px;
+        border-radius: 3px;
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: $teal;
+        width: 100%;
+        cursor: pointer;
+        transition: 0.2s ease;
+        &:invalid {
+            opacity: 0.6;
+            color: $grey;
+          }
+        &::placeholder {
+            opacity: 0.6;
+            color: $grey;
+          }
+    }
+    &__2-col {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 15px;
+    }
+    .error-p {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: $errorRed;
+        margin-top:10px;
+        display: none;
+    }
+    &.errors {
+        .gcc-select {
+            border: 1px $errorRed solid!important;
+        }
+        .error-p {
+            display: block;
+        }
+    }
+    &.disable {
+        label {
+            opacity: 0.2;
+        }
+        select,select:invalid {
+            color: rgba(0,0,0,0.2);
+        }
+    }
+  
+}
+.gcc-submit {
+    background-color: $aqua;
+    color: $white;
+    font-weight: 500;
+    border-radius: 3px!important;
+    padding-inline: 40px;
+}
+
+.gcc-selection {
+    margin-top: 30px;
+    border-bottom: 1px $greyLighter solid;
+    padding-bottom: 25px;
+    // &:last-of-type {
+    //     border-bottom: none;
+    // }
+    &.hidden { 
+        display: none ;
+    }
+    &__heading {
+        font-size: 1.6rem;
+        font-weight: 500;
+        // ;
+        margin-bottom:25px;
+    }
+    &__name {
+        font-size: 2.4rem;
+        font-weight: 500;
+        color: $teal;
+    }
+    &__desc {
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: $grey;
+        margin-top: 10px;
+        color: $chartreuse;
+    }
+    &__image {
+        width: 80%;
+        margin-inline: auto;
+    }
+}

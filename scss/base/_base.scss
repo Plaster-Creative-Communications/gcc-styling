@@ -140,6 +140,9 @@ height: 25px;
     width: 100%;
     height: 15px;
 }
+.gcc-border-top {
+    border-top: 1px $greyLighter solid;
+}
 .sparkle-background {
     background-color: $black;
     position: absolute;
