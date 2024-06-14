@@ -2259,7 +2259,8 @@ form .hs-error-msgs label {
 .gcc-input-wrapper .required {
   color: #CCD814;
 }
-.gcc-input-wrapper .gcc-select, .gcc-input-wrapper .gcc-input {
+.gcc-input-wrapper .gcc-select, .gcc-input-wrapper .gcc-input, .gcc-input-wrapper .gcc-textarea {
+  font-family: "Arial";
   background-color: #F3F3F3;
   border: none;
   outline: none;
@@ -2272,17 +2273,25 @@ form .hs-error-msgs label {
   cursor: pointer;
   transition: 0.2s ease;
 }
-.gcc-input-wrapper .gcc-select:invalid, .gcc-input-wrapper .gcc-input:invalid {
+.gcc-input-wrapper .gcc-select:invalid, .gcc-input-wrapper .gcc-input:invalid, .gcc-input-wrapper .gcc-textarea:invalid {
   opacity: 0.6;
   color: #575757;
 }
-.gcc-input-wrapper .gcc-select::-moz-placeholder, .gcc-input-wrapper .gcc-input::-moz-placeholder {
+.gcc-input-wrapper .gcc-select::-moz-placeholder, .gcc-input-wrapper .gcc-input::-moz-placeholder, .gcc-input-wrapper .gcc-textarea::-moz-placeholder {
   opacity: 0.6;
   color: #575757;
 }
-.gcc-input-wrapper .gcc-select::placeholder, .gcc-input-wrapper .gcc-input::placeholder {
+.gcc-input-wrapper .gcc-select::placeholder, .gcc-input-wrapper .gcc-input::placeholder, .gcc-input-wrapper .gcc-textarea::placeholder {
   opacity: 0.6;
   color: #575757;
+}
+.gcc-input-wrapper .gcc-other-wrapper {
+  margin-top: 25px;
+}
+.gcc-input-wrapper .gcc-textarea {
+  resize: none;
+  height: 150px;
+  margin-top: 10px;
 }
 .gcc-input-wrapper__2-col {
   display: grid;

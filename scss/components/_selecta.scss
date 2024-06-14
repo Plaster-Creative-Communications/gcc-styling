@@ -194,7 +194,8 @@
     .required {
         color: $chartreuse;
     }
-    .gcc-select, .gcc-input {
+    .gcc-select, .gcc-input, .gcc-textarea { 
+        font-family: 'Arial';
         background-color: $greyLight;
         border: none;
         outline: none;
@@ -214,6 +215,14 @@
             opacity: 0.6;
             color: $grey;
           }
+    }
+    .gcc-other-wrapper {
+        margin-top: 25px;
+    }
+    .gcc-textarea {
+        resize: none;
+        height: 150px;
+        margin-top: 10px;
     }
     &__2-col {
         display: grid;
