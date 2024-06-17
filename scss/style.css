@@ -2354,4 +2354,25 @@ form .hs-error-msgs label {
 .gcc-selection__image {
   width: 80%;
   margin-inline: auto;
+}
+
+.gcc-breadcrumbs {
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+}
+.gcc-breadcrumbs__crumb, .gcc-breadcrumbs__arrow {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #575757;
+  opacity: 0.6;
+  margin-right: 5px;
+  transition: 0.1s;
+}
+.gcc-breadcrumbs__crumb.active {
+  opacity: 1;
+  text-decoration: none;
+}
+.gcc-breadcrumbs__crumb:hover {
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */

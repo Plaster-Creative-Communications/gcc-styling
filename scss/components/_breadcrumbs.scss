@@ -1,0 +1,23 @@
+.gcc-breadcrumbs {
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+
+    &__crumb,  &__arrow {
+        font-size: 1.4rem;
+        font-weight: 300;
+        color: $grey;
+        opacity: 0.6;
+        margin-right: 5px;
+        transition: 0.1s;
+    }
+    &__crumb {
+        &.active {
+            opacity: 1;
+            text-decoration: none;
+        }
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
