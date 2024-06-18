@@ -2004,6 +2004,12 @@ form .hs-error-msgs label {
 }
 
 .seagate-configurator {
+  max-width: 900px;
+  width: 100%;
+  margin-inline: auto;
+  border-top: 0;
+}
+.seagate-configurator__inner-form {
   margin-top: 20px;
   border-top: 1px #D9D9D9 solid;
 }
@@ -2025,31 +2031,63 @@ form .hs-error-msgs label {
 .seagate-configurator .seagate-input-wrapper__2-col.split .seagate-input-wrapper:nth-of-type(2) {
   width: 50%;
 }
-.seagate-configurator .seagate-input-wrapper {
+.seagate-configurator__section {
+  margin-top: 5px;
+  padding-top: 45px;
+}
+.seagate-configurator .seagate-input-wrapper, .seagate-configurator .seagate-next-question {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px #D9D9D9 solid;
   padding-top: 25px;
 }
-.seagate-configurator .seagate-input-wrapper.hide {
+.seagate-configurator .seagate-input-wrapper.no-border, .seagate-configurator .seagate-next-question.no-border {
+  border: none;
+}
+.seagate-configurator .seagate-input-wrapper.hide, .seagate-configurator .seagate-next-question.hide {
   display: none;
 }
-.seagate-configurator .seagate-input-wrapper label {
-  font-size: 20px;
+.seagate-configurator .seagate-input-wrapper label, .seagate-configurator .seagate-input-wrapper .label, .seagate-configurator .seagate-next-question label, .seagate-configurator .seagate-next-question .label {
+  font-family: "TWK Everett";
+  font-size: 2rem;
   font-weight: 600;
-  font-family: "Arial" !important;
   color: #000000;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+  transition: 0.2s ease;
 }
-.seagate-configurator .seagate-input-wrapper select, .seagate-configurator .seagate-input-wrapper input {
-  font-size: 22px;
-  margin-top: 5px;
-  padding: 25px 0;
+.seagate-configurator .seagate-input-wrapper select, .seagate-configurator .seagate-input-wrapper input, .seagate-configurator .seagate-input-wrapper .seagate-fake-input, .seagate-configurator .seagate-next-question select, .seagate-configurator .seagate-next-question input, .seagate-configurator .seagate-next-question .seagate-fake-input {
+  font-family: "Arial";
+  font-size: 1.8rem;
+  margin-top: 0px;
+  padding: 15px 0;
   border: none;
   outline: none;
   cursor: pointer;
+  color: #575757;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.2s ease;
+  border-bottom: 1px #D9D9D9 solid;
 }
-.seagate-configurator .seagate-input-wrapper select:invalid, .seagate-configurator .seagate-input-wrapper input:invalid {
+.seagate-configurator .seagate-input-wrapper select:invalid, .seagate-configurator .seagate-input-wrapper input:invalid, .seagate-configurator .seagate-input-wrapper .seagate-fake-input:invalid, .seagate-configurator .seagate-next-question select:invalid, .seagate-configurator .seagate-next-question input:invalid, .seagate-configurator .seagate-next-question .seagate-fake-input:invalid {
   opacity: 0.6;
+}
+.seagate-configurator .seagate-next-question {
+  position: relative;
+}
+.seagate-configurator .seagate-next-question:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgb(255, 255, 255) 100%);
 }
 .seagate-configurator .seagate-configurator__actions {
   padding: 15px 0;
@@ -2298,19 +2336,6 @@ form .hs-error-msgs label {
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
 }
-.gcc-input-wrapper .error-p {
-  font-size: 1.6rem;
-  font-weight: 400;
-  color: #DA2128;
-  margin-top: 10px;
-  display: none;
-}
-.gcc-input-wrapper.errors .gcc-select {
-  border: 1px #DA2128 solid !important;
-}
-.gcc-input-wrapper.errors .error-p {
-  display: block;
-}
 .gcc-input-wrapper.disable label {
   opacity: 0.2;
 }
@@ -2356,8 +2381,29 @@ form .hs-error-msgs label {
   margin-inline: auto;
 }
 
+.errors .gcc-select {
+  border: 1px #DA2128 solid !important;
+}
+.errors .error-p {
+  display: block;
+}
+.errors .seagate-configurator__select {
+  border-bottom: 1px #DA2128 solid !important;
+}
+.errors.seagate-input-wrapper {
+  border-bottom: none;
+}
+
+.error-p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #DA2128;
+  margin-top: 10px;
+  display: none;
+}
+
 .gcc-breadcrumbs {
-  padding: 15px 0;
+  padding: 15px;
   display: flex;
   align-items: center;
 }

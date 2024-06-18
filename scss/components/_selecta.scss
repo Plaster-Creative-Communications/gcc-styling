@@ -229,21 +229,7 @@
         grid-template-columns: repeat(2,1fr);
         gap: 15px;
     }
-    .error-p {
-        font-size: 1.6rem;
-        font-weight: 400;
-        color: $errorRed;
-        margin-top:10px;
-        display: none;
-    }
-    &.errors {
-        .gcc-select {
-            border: 1px $errorRed solid!important;
-        }
-        .error-p {
-            display: block;
-        }
-    }
+    
     &.disable {
         label {
             opacity: 0.2;
@@ -294,4 +280,27 @@
         width: 80%;
         margin-inline: auto;
     }
+}
+
+// ERRORS
+.errors {
+    .gcc-select {
+        border: 1px $errorRed solid!important;
+    }
+    .error-p {
+        display: block;
+    }
+    .seagate-configurator__select {
+        border-bottom: 1px $errorRed solid!important;
+    }
+    &.seagate-input-wrapper { 
+        border-bottom:none;
+    }
+}
+.error-p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: $errorRed;
+    margin-top:10px;
+    display: none;
 }
