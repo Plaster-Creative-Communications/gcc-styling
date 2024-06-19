@@ -2003,6 +2003,16 @@ form .hs-error-msgs label {
   transform: rotate(180deg);
 }
 
+.seagate-configurator-wrapper {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 900px;
+  padding: 50px;
+  margin-inline: auto;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.04);
+  border-radius: 2px;
+}
+
 .seagate-configurator {
   max-width: 900px;
   width: 100%;
@@ -2094,7 +2104,7 @@ form .hs-error-msgs label {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgb(255, 255, 255) 100%);
 }
 .seagate-configurator .seagate-configurator__actions {
-  padding: 15px 0;
+  padding-top: 15px;
   display: flex;
   justify-content: flex-end;
   width: 100%;
