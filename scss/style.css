@@ -2056,7 +2056,7 @@ form .hs-error-msgs label {
   margin-bottom: 5px;
   transition: 0.2s ease;
 }
-.seagate-configurator .seagate-input-wrapper select, .seagate-configurator .seagate-input-wrapper input, .seagate-configurator .seagate-input-wrapper .seagate-fake-input, .seagate-configurator .seagate-next-question select, .seagate-configurator .seagate-next-question input, .seagate-configurator .seagate-next-question .seagate-fake-input {
+.seagate-configurator .seagate-input-wrapper select, .seagate-configurator .seagate-input-wrapper input, .seagate-configurator .seagate-input-wrapper .seagate-fake-input, .seagate-configurator .seagate-input-wrapper textarea, .seagate-configurator .seagate-next-question select, .seagate-configurator .seagate-next-question input, .seagate-configurator .seagate-next-question .seagate-fake-input, .seagate-configurator .seagate-next-question textarea {
   font-family: "Arial";
   font-size: 1.8rem;
   margin-top: 0px;
@@ -2073,8 +2073,12 @@ form .hs-error-msgs label {
   transition: 0.2s ease;
   border-bottom: 1px #D9D9D9 solid;
 }
-.seagate-configurator .seagate-input-wrapper select:invalid, .seagate-configurator .seagate-input-wrapper input:invalid, .seagate-configurator .seagate-input-wrapper .seagate-fake-input:invalid, .seagate-configurator .seagate-next-question select:invalid, .seagate-configurator .seagate-next-question input:invalid, .seagate-configurator .seagate-next-question .seagate-fake-input:invalid {
+.seagate-configurator .seagate-input-wrapper select:invalid, .seagate-configurator .seagate-input-wrapper input:invalid, .seagate-configurator .seagate-input-wrapper .seagate-fake-input:invalid, .seagate-configurator .seagate-input-wrapper textarea:invalid, .seagate-configurator .seagate-next-question select:invalid, .seagate-configurator .seagate-next-question input:invalid, .seagate-configurator .seagate-next-question .seagate-fake-input:invalid, .seagate-configurator .seagate-next-question textarea:invalid {
   opacity: 0.6;
+}
+.seagate-configurator .seagate-input-wrapper textarea, .seagate-configurator .seagate-next-question textarea {
+  height: 150px;
+  resize: none;
 }
 .seagate-configurator .seagate-next-question {
   position: relative;

@@ -62,7 +62,7 @@
         // margin-bottom: 10px;
         transition: 0.2s ease;
     }
-    select, input, .seagate-fake-input {
+    select, input, .seagate-fake-input, textarea {
         font-family: $fontBody;
         font-size: 1.8rem;
         margin-top: 0px;
@@ -85,6 +85,10 @@
         &:invalid {
             opacity: 0.6;
           }
+    }
+    textarea {
+        height: 150px;
+        resize: none;
     }
    } 
    .seagate-next-question {
