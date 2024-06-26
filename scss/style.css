@@ -2242,6 +2242,9 @@ form .hs-error-msgs label {
 .gcc-region.new .gcc-region__flag img {
   width: 100%;
 }
+.gcc-region.new .gcc-header-logo {
+  margin-right: auto;
+}
 
 .gcc-server-form-wrapper {
   padding-top: 25px;
