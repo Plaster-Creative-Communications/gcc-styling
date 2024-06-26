@@ -1,0 +1,13 @@
+.gcc-loading {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    svg {
+        width: 100px;
+        height: fit-content;
+        margin-bottom:15px;
+    }
+}

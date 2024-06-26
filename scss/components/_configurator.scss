@@ -94,6 +94,9 @@
         &:invalid {
             opacity: 0.6;
           }
+          &::placeholder {
+           color: 87, 87, 87, .6;
+          }
     }
     textarea {
         height: 150px;
@@ -114,7 +117,7 @@
         }
    }
    .seagate-configurator__actions {
-    padding-top: 15px;
+    padding-top: 15px 0;
     display: flex;
     justify-content: flex-end;
     width: 100%;

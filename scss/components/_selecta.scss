@@ -113,17 +113,21 @@
 }
 
 .gcc-server-form-wrapper {
-    margin-top: 25px;
+    // margin-top: 15px;
     padding-top:25px;
+    padding-bottom: 25px;
     width: 100%;
     max-width: 700px;
     margin-inline: auto;
+    border-bottom: 1px $lightGrey solid;;
     // border-top: 1px $greyLighter solid;
     .gcc-heading__h4 {
         margin-bottom: 15px!important;
     }
     .gcc-submit {
-        margin-inline: auto;
+    //   margin-left: auto;
+    margin-right: 0;
+    margin-top: 0;;
     }
 }
 .gcc-server-form {
@@ -151,14 +155,23 @@
     &__personal-info {
         margin-top:30px;
     }
-
+    &__actions {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .main {
+            margin-left: auto;
+        }
+    }
 }
 
 .gcc-server-details {
     margin-top:15px;
     overflow: hidden;
-    max-height: 0;
-    margin: 0;
+    padding-top: 25px;
+    // max-height: 0;
+    // margin: 0;
+    
     transition: 0.2s ease;
     &.show {
         margin-top:15px;
@@ -168,6 +181,27 @@
     }
     .gcc-server-list {
         margin-top:5px;
+        // list-style:inside;
+        padding-left: 17px;
+        li {
+            list-style-type: disc;;
+        }
+        .gcc-server-list__link {
+            list-style-type: none;
+            text-align: center;
+            margin-bottom: 0!important;
+            padding-bottom:0!important;
+            .gcc-button{
+                background-color: $white;
+                color: $aqua;
+                // border: 1px $aqua solid!important;
+                margin: 0!important;
+                padding:0!important;
+                font-size: 1.6rem!important;
+                text-decoration: underline!important;
+                text-underline-offset: 4px;
+            }
+        }
     }
 }
 
@@ -207,13 +241,16 @@
         width: 100%;
         cursor: pointer;
         transition: 0.2s ease;
-        &:invalid {
-            opacity: 0.6;
+        option {
             color: $grey;
+        }
+        &:invalid {
+       
+            color: rgba(87,87,87,.6);
           }
         &::placeholder {
-            opacity: 0.6;
-            color: $grey;
+    
+            color: rgba(87,87,87,.6);
           }
     }
     .gcc-other-wrapper {
@@ -246,6 +283,17 @@
     font-weight: 500;
     border-radius: 3px!important;
     padding-inline: 40px;
+    &.secondary {
+        background:none;
+        color: $aqua;
+        font-size: 1.6rem!important;
+        padding:0!important;
+        margin: 0!important;
+        text-decoration: underline!important;
+        text-underline-offset: 3px;
+        margin-right: 15px!important;
+    }
+
 }
 
 .gcc-selection {

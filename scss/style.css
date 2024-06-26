@@ -352,6 +352,10 @@ main {
   font-size: 2.2rem !important;
 }
 
+.hide {
+  display: none !important;
+}
+
 .white {
   color: white !important;
 }
@@ -2086,6 +2090,12 @@ form .hs-error-msgs label {
 .seagate-configurator .seagate-input-wrapper select:invalid, .seagate-configurator .seagate-input-wrapper input:invalid, .seagate-configurator .seagate-input-wrapper .seagate-fake-input:invalid, .seagate-configurator .seagate-input-wrapper textarea:invalid, .seagate-configurator .seagate-next-question select:invalid, .seagate-configurator .seagate-next-question input:invalid, .seagate-configurator .seagate-next-question .seagate-fake-input:invalid, .seagate-configurator .seagate-next-question textarea:invalid {
   opacity: 0.6;
 }
+.seagate-configurator .seagate-input-wrapper select::-moz-placeholder, .seagate-configurator .seagate-input-wrapper input::-moz-placeholder, .seagate-configurator .seagate-input-wrapper .seagate-fake-input::-moz-placeholder, .seagate-configurator .seagate-input-wrapper textarea::-moz-placeholder, .seagate-configurator .seagate-next-question select::-moz-placeholder, .seagate-configurator .seagate-next-question input::-moz-placeholder, .seagate-configurator .seagate-next-question .seagate-fake-input::-moz-placeholder, .seagate-configurator .seagate-next-question textarea::-moz-placeholder {
+  color: 87, 87, 87, 0.6;
+}
+.seagate-configurator .seagate-input-wrapper select::placeholder, .seagate-configurator .seagate-input-wrapper input::placeholder, .seagate-configurator .seagate-input-wrapper .seagate-fake-input::placeholder, .seagate-configurator .seagate-input-wrapper textarea::placeholder, .seagate-configurator .seagate-next-question select::placeholder, .seagate-configurator .seagate-next-question input::placeholder, .seagate-configurator .seagate-next-question .seagate-fake-input::placeholder, .seagate-configurator .seagate-next-question textarea::placeholder {
+  color: 87, 87, 87, 0.6;
+}
 .seagate-configurator .seagate-input-wrapper textarea, .seagate-configurator .seagate-next-question textarea {
   height: 150px;
   resize: none;
@@ -2104,7 +2114,7 @@ form .hs-error-msgs label {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgb(255, 255, 255) 100%);
 }
 .seagate-configurator .seagate-configurator__actions {
-  padding-top: 15px;
+  padding-top: 15px 0;
   display: flex;
   justify-content: flex-end;
   width: 100%;
@@ -2234,17 +2244,19 @@ form .hs-error-msgs label {
 }
 
 .gcc-server-form-wrapper {
-  margin-top: 25px;
   padding-top: 25px;
+  padding-bottom: 25px;
   width: 100%;
   max-width: 700px;
   margin-inline: auto;
+  border-bottom: 1px #D9D9D9 solid;
 }
 .gcc-server-form-wrapper .gcc-heading__h4 {
   margin-bottom: 15px !important;
 }
 .gcc-server-form-wrapper .gcc-submit {
-  margin-inline: auto;
+  margin-right: 0;
+  margin-top: 0;
 }
 
 .gcc-server-form .gcc-server-form__inner {
@@ -2269,12 +2281,19 @@ form .hs-error-msgs label {
 .gcc-server-form__personal-info {
   margin-top: 30px;
 }
+.gcc-server-form__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.gcc-server-form__actions .main {
+  margin-left: auto;
+}
 
 .gcc-server-details {
   margin-top: 15px;
   overflow: hidden;
-  max-height: 0;
-  margin: 0;
+  padding-top: 25px;
   transition: 0.2s ease;
 }
 .gcc-server-details.show {
@@ -2285,6 +2304,25 @@ form .hs-error-msgs label {
 }
 .gcc-server-details .gcc-server-list {
   margin-top: 5px;
+  padding-left: 17px;
+}
+.gcc-server-details .gcc-server-list li {
+  list-style-type: disc;
+}
+.gcc-server-details .gcc-server-list .gcc-server-list__link {
+  list-style-type: none;
+  text-align: center;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+.gcc-server-details .gcc-server-list .gcc-server-list__link .gcc-button {
+  background-color: #ffffff;
+  color: #08BED5;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 1.6rem !important;
+  text-decoration: underline !important;
+  text-underline-offset: 4px;
 }
 
 .gcc-hidden-fields {
@@ -2325,17 +2363,17 @@ form .hs-error-msgs label {
   cursor: pointer;
   transition: 0.2s ease;
 }
-.gcc-input-wrapper .gcc-select:invalid, .gcc-input-wrapper .gcc-input:invalid, .gcc-input-wrapper .gcc-textarea:invalid {
-  opacity: 0.6;
+.gcc-input-wrapper .gcc-select option, .gcc-input-wrapper .gcc-input option, .gcc-input-wrapper .gcc-textarea option {
   color: #575757;
+}
+.gcc-input-wrapper .gcc-select:invalid, .gcc-input-wrapper .gcc-input:invalid, .gcc-input-wrapper .gcc-textarea:invalid {
+  color: rgba(87, 87, 87, 0.6);
 }
 .gcc-input-wrapper .gcc-select::-moz-placeholder, .gcc-input-wrapper .gcc-input::-moz-placeholder, .gcc-input-wrapper .gcc-textarea::-moz-placeholder {
-  opacity: 0.6;
-  color: #575757;
+  color: rgba(87, 87, 87, 0.6);
 }
 .gcc-input-wrapper .gcc-select::placeholder, .gcc-input-wrapper .gcc-input::placeholder, .gcc-input-wrapper .gcc-textarea::placeholder {
-  opacity: 0.6;
-  color: #575757;
+  color: rgba(87, 87, 87, 0.6);
 }
 .gcc-input-wrapper .gcc-other-wrapper {
   margin-top: 25px;
@@ -2363,6 +2401,16 @@ form .hs-error-msgs label {
   font-weight: 500;
   border-radius: 3px !important;
   padding-inline: 40px;
+}
+.gcc-submit.secondary {
+  background: none;
+  color: #08BED5;
+  font-size: 1.6rem !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  text-decoration: underline !important;
+  text-underline-offset: 3px;
+  margin-right: 15px !important;
 }
 
 .gcc-selection {
@@ -2435,4 +2483,19 @@ form .hs-error-msgs label {
 }
 .gcc-breadcrumbs__crumb:hover {
   opacity: 1;
+}
+
+.gcc-loading {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+}
+.gcc-loading svg {
+  width: 100px;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 15px;
 }/*# sourceMappingURL=style.css.map */
