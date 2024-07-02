@@ -459,23 +459,23 @@ form .hs-error-msgs label {
   }
 }
 .gcc-grid {
-  display: grid;
+  display: grid !important;
   gap: 25px;
 }
 .gcc-grid__2-cols {
-  display: grid;
+  display: grid !important;
   gap: 25px;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr) !important;
 }
 .gcc-grid__3-cols {
-  display: grid;
+  display: grid !important;
   gap: 25px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr) !important;
 }
 .gcc-grid__4-cols {
-  display: grid;
+  display: grid !important;
   gap: 25px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr) !important;
 }
 .gcc-grid .gcc-col {
   width: 100%;
