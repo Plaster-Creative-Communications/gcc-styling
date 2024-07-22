@@ -2200,7 +2200,7 @@ form .hs-error-msgs label {
 }
 
 .gcc-server-logo {
-  max-width: 200px;
+  max-width: 200px !important;
   margin-inline: auto;
 }
 
@@ -2477,6 +2477,7 @@ form .hs-error-msgs label {
   font-weight: 300;
   color: #575757;
   opacity: 0.6;
+  margin: 0;
   margin-right: 5px;
   transition: 0.1s;
 }
