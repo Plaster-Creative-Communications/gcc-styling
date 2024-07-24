@@ -2270,6 +2270,10 @@ form .hs-error-msgs label {
 .gcc-server-form .gcc-button {
   transition: 0.5s ease;
   margin-top: 0 !important;
+  transition: 0.2s ease;
+}
+.gcc-server-form .gcc-button:disabled {
+  opacity: 0.2;
 }
 .gcc-server-form.hidden .gcc-server-form__inner {
   max-height: 0px;
