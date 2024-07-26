@@ -398,6 +398,13 @@ main {
 .gcc-bg__light-grey {
   background-color: #F3F3F3 !important;
 }
+.gcc-bg__teal {
+  background-color: #005758 !important;
+}
+
+.intel-bg__blue {
+  background-color: #0068B5 !important;
+}
 
 .seagate-green {
   color: #6EBE49 !important;
@@ -1709,6 +1716,10 @@ form .hs-error-msgs label {
   display: flex;
   padding: 50px 25px;
 }
+.td-hero__overlay-blue, .gcc-hero__overlay-blue {
+  background-color: #0068B5;
+  opacity: 0.6;
+}
 .td-hero__content, .gcc-hero__content {
   margin-top: auto;
   max-width: 750px;
@@ -1727,6 +1738,21 @@ form .hs-error-msgs label {
   top: 25px;
   right: 25px;
   width: 150px;
+}
+.td-hero.gcc-overlay::after, .gcc-hero.gcc-overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #005758;
+  opacity: 0.5;
+  z-index: 0;
+}
+.td-hero.gcc-overlay__blue::after, .gcc-hero.gcc-overlay__blue::after {
+  background-color: #0068B5;
+  opacity: 0.6;
 }
 .td-hero.green-overlay::after, .gcc-hero.green-overlay::after {
   content: "";

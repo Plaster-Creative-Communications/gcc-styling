@@ -19,6 +19,10 @@
         background-color: rgba(0,87,88,0.6);
         display: flex;
         padding: 50px 25px;
+        &-blue {
+            background-color: $blue;
+            opacity: 0.6;
+        }
     }
     &__content {
         margin-top: auto;
@@ -38,6 +42,25 @@
         top: 25px;
         right: 25px;
         width: 150px;
+    }
+    &.gcc-overlay {
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $teal;
+            opacity: 0.5;
+            z-index: 0;
+        }
+        &__blue {
+            &::after {
+                background-color: $blue;
+                opacity: 0.6;
+            }
+        }
     }
     &.green-overlay { 
         &::after {
