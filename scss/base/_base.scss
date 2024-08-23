@@ -168,6 +168,10 @@ height: 25px;
     font-weight: 600!important;
 }
 
+.td-underline {
+    text-decoration: underline!important;
+}
+
 .td-spacer {
     height: 20px;
 }
@@ -187,6 +191,21 @@ height: 25px;
     .td-content {
         // width: 70%;;
     }
+}
+
+.td-list {
+    margin-top: 10px;
+    padding-left:0;
+    margin-left:0;
+    li {
+        a {
+            color: $grey;
+        }
+    }
+}
+
+.td-spacer {
+    height:30px;
 }
 
 main {

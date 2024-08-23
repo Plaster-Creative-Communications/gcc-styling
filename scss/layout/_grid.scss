@@ -156,3 +156,93 @@
         justify-content: center;
     }
 }
+
+.td-cols {
+    display: flex;
+    align-items: stretch;
+    margin-top: 25px;
+    &__list {
+        background-color: #FAFBFB;
+        border: 1px #E8E9E9 solid;
+        width: 40%;
+        // height: 100%;
+        ul {
+            margin:0;
+            display: flex;
+            flex-direction: column;
+            justify-content: stretch;
+            height: 100%;
+            li {
+                border-bottom: 1px #E8E9E9 solid;
+                padding: 15px 30px;
+                height:100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                // height: 100%;
+                .td-body-p {
+                    margin:0!important;
+                    padding:0!important;
+                }
+                .td-heading__h4 {
+                    font-size:2.4rem!important;
+                }
+                a {
+                    // text-decoration: underline!important;
+                    color: $teal;
+                }
+            }
+        }
+    }
+    &__img {
+        padding: 0;
+
+    }
+    &__3 {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 15px;
+        margin-top:25px;
+    
+        .td-col {
+            text-decoration: none!important;
+            height: 100%;
+            .td-img {
+                width: 100%;
+                height: 250px;
+                min-height: 250px;
+                border: 1px #E8E9E9 solid;
+                img {
+                    width: 100%;;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            &__content {
+                border: 1px #E8E9E9 solid;
+                background-color: #FAFBFB;
+                padding: 25px 15px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+            .td-heading__h3 {
+                margin-bottom: 15px!important;
+            }
+            &:hover {
+                p {
+                    text-decoration: underline!important;
+                }
+            }
+            p {
+                color: $grey;
+                // text-decoration: underline!important;
+                margin-bottom: 0!important;
+                padding:0!important;
+                // text-decoration: underline!important;
+                color: $teal;
+                margin-top: auto;
+            }
+        }
+    }
+}
