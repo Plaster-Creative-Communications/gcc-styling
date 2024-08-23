@@ -664,7 +664,7 @@ form .hs-error-msgs label {
   font-size: 2.4rem !important;
 }
 .td-cols__list ul li a {
-  color: #005758;
+  color: #575757;
 }
 .td-cols__img {
   padding: 0;
@@ -709,7 +709,6 @@ form .hs-error-msgs label {
   color: #575757;
   margin-bottom: 0 !important;
   padding: 0 !important;
-  color: #005758;
   margin-top: auto;
 }
 
@@ -1902,6 +1901,25 @@ form .hs-error-msgs label {
 .td-section {
   margin-block: 50px;
   padding-inline: 25px;
+}
+.td-section__videos .td-cols, .td-section__videos .td-cols__3 {
+  gap: 25px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.td-section__videos .td-cols .td-video, .td-section__videos .td-cols__3 .td-video {
+  background: none;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.td-section__videos .td-cols .td-video__wrap, .td-section__videos .td-cols__3 .td-video__wrap {
+  border: 1px #E8E9E9 solid;
+  margin-bottom: 10px;
+}
+.td-section__videos .td-cols .td-video .td-body-p, .td-section__videos .td-cols__3 .td-video .td-body-p {
+  font-size: 2.2rem !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
 }
 
 .td-2-cols {
